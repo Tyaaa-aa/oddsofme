@@ -6,7 +6,9 @@ const store = useGlobalStore()
 <template>
 	<main class="w-screen h-screen grid place-items-center p-10">
 		<div class="text-center">
-			<h2 class="text-2xl">{{ store.global }} | coming soon</h2>
+			<LogoSvg class="w-32 h-32 mx-auto" />
+
+			<h2 class="text-2xl">{{ store.global }} | Coming Soon</h2>
 			<DarkLightButton />
 			<PopulationCounter />
 		</div>
