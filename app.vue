@@ -10,6 +10,9 @@ useHead({
 		},
 	],
 	link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+	bodyAttrs:{
+		class: 'transition-background duration-200 ease-in-out'
+	}
 })
 
 // const store = useGlobalStore()

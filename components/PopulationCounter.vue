@@ -12,7 +12,7 @@ onMounted(() => {
 		if (population.value > startingNumber + 10) {
 			population.value -= Math.floor(Math.random() * 20) + 1
 		}
-	}, 350)
+	}, 1333)
 })
 
 const growShrink = ref('text-green-500')

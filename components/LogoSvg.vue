@@ -11,3 +11,9 @@
 					:fill="$colorMode.preference === 'light' ? '#121111' : '#eeeded'" />
 			</svg>
 </template>
+
+<style scoped>
+path {
+	transition: fill 200ms;
+}
+</style>
