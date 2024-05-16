@@ -10,7 +10,7 @@ useHead({
 		},
 	],
 	link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
-	bodyAttrs:{
+	bodyAttrs: {
 		class: 'transition-background duration-200 ease-in-out'
 	}
 })
@@ -21,7 +21,7 @@ useHead({
 // })
 </script>
 <template>
-	<div>
+	<NuxtLayout>
 		<NuxtPage />
-	</div>
+	</NuxtLayout>
 </template>
