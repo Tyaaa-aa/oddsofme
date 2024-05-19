@@ -3,8 +3,13 @@ const { data: ENVIRONMENT, error } = useFetch("/api/environment")
 </script>
 
 <template>
-	<Maintenance v-if="ENVIRONMENT === 'production' || error" />
-	<main v-else>
-		Developing
-	</main>
+  <Header />
+  <main>
+    Developing
+  </main>
 </template>
+<style scoped>
+main {
+  margin-top: 25dvh;
+}
+</style>
