@@ -4,13 +4,17 @@ const colorMode = useColorMode()
 const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark")
 </script>
 <template>
-  <Button class="m-5" aria-label="Toggle Dark Mode" @click="toggleColorMode" v-auto-animate>
-    <ClientOnly>
-      <Moon class="w-4 h-4" v-if="colorMode.preference === 'light'" />
-      <Sun class="w-4 h-4" v-else />
+  <ClientOnly>
+    <Button variant="outline" class="w-[50px] h-[50px] bg-transparent animate-fadein hover:bg-foreground"
+      aria-label="Toggle Dark Mode" @click="toggleColorMode" v-auto-animate>
+      <Moon class="scale-125" v-if="colorMode.preference === 'light'" />
+      <Sun class="scale-125" v-else />
       <template #fallback>
-        <Sun class="w-4 h-4" />
+        <Sun class="scale-125" />
       </template>
-    </ClientOnly>
-  </Button>
+    </Button>
+    <template #fallback>
+      <Skeleton class="w-[50px] h-[50px] rounded-lg" />
+    </template>
+  </ClientOnly>
 </template>

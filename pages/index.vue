@@ -4,7 +4,7 @@ const { data: ENVIRONMENT, error } = useFetch("/api/environment")
 
 <template>
   <Header />
-  <main>
+  <main class="container mx-auto px-4">
     Developing
   </main>
 </template>

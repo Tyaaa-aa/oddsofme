@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* add fonts here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 3% 94%;
-    --foreground: 36 37% 8%;
+    /* --background: 0 3% 94%; */
+    --background: 0 0% 94%;
+    /* --foreground: 36 37% 8%; */
+    --foreground: 35 33% 9%;
     --card: 0 3% 94%;
     --card-foreground: 36 37% 8%;
     --popover: 0 3% 94%;
@@ -25,7 +27,56 @@
     --border: 0 4% 20%;
     --input: 0 4% 20%;
     --ring: 232 47% 40%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    --text: #1c160d;
+    --background: #f0efef;
+    --primary: #fda312;
+    --secondary: #14223e;
+    --accent: #2b3578;
+    --neutral: #828282;
+    --faded: #dadada;
+    --negative-text: #f0efef;
+
+    --text: 35 33% 9%;
+    --primary: 39 98% 54%;
+    --secondary: 218 49% 15%;
+    --accent: 233 48% 33%;
+    --neutral: 0 0% 51%;
+    --faded: 0 0% 85%;
+    --negative-text: 0 0% 94%;
+
+    .text {
+      color: hsl(var(--text));
+    }
+
+    .background2 {
+      background-color: hsl(var(--background));
+    }
+
+    .primary {
+      color: hsl(var(--primary));
+    }
+
+    .secondary {
+      color: hsl(var(--secondary));
+    }
+
+    .accent {
+      color: hsl(var(--accent));
+    }
+
+    .neutral {
+      color: hsl(var(--neutral));
+    }
+
+    .faded {
+      color: hsl(var(--faded));
+    }
+
+    .negative-text {
+      color: hsl(var(--negative-text));
+    }
   }
 
   .dark {
