@@ -12,7 +12,7 @@
     --foreground: 35 33% 9%;
     --card: 0 3% 94%;
     --card-foreground: 36 37% 8%;
-    --popover: 0 3% 94%;
+    --popover: 0 0 94%;
     --popover-foreground: 36 37% 8%;
     --primary: 37 98% 53%;
     --primary-foreground: 36 37% 8%;
@@ -84,7 +84,7 @@
     --foreground: 36 37% 92%;
     --card: 0 3% 6%;
     --card-foreground: 36 37% 92%;
-    --popover: 0 3% 6%;
+    --popover: 0 0 15%;
     --popover-foreground: 36 37% 92%;
     --primary: 37 98% 47%;
     --primary-foreground: 0 3% 6%;
@@ -99,6 +99,21 @@
     --border: 0 3% 60%;
     --input: 0 4% 80%;
     --ring: 232 47% 60%;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Chrome, Edge, and Safari */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--popover));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted));
+    border-radius: 10px;
   }
 }
 
