@@ -5,7 +5,7 @@ const toggleColorMode = () => (colorMode.preference = colorMode.preference === "
 </script>
 <template>
   <ClientOnly>
-    <Button variant="outline" class="w-[50px] h-[50px] bg-transparent animate-fadein hover:bg-foreground"
+    <Button variant="outline" class="w-[50px] h-[50px] animate-fadein hover:bg-foreground bg-transparent"
       aria-label="Toggle Dark Mode" @click="toggleColorMode" v-auto-animate>
       <Moon class="scale-125" v-if="colorMode.preference === 'light'" />
       <Sun class="scale-125" v-else />
