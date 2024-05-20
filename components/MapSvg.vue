@@ -1479,23 +1479,19 @@ path {
 }
 
 svg {
-  position: absolute;
-  z-index: -1;
-  opacity: 0.25;
-  scale: 3;
-  transform-origin: 50% 45%;
+  opacity: 0.2;
   animation: fade-in 500ms;
+  z-index: -1;
+  scale: 3;
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    scale: 2.7;
   }
 
   to {
-    opacity: 0.25;
-    scale: 3;
+    opacity: 0.2;
   }
 }
 </style>
