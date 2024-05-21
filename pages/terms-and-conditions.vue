@@ -1433,7 +1433,7 @@
               security. Please review our Privacy Policy:<strong>&nbsp;<span style="">
                   <bdt class="block-container question question-in-editor"
                     data-id="d10c7fd7-0685-12ac-c717-cbc45ff916d1" data-type="question"><a
-                      href="https://oddsofme.com/privacy" target="_blank"
+                      href="/privacy" target="_blank"
                       data-custom-class="link">https://oddsofme.com/privacy</a></bdt>
                 </span></strong>. By using the Services, you agree to be bound by our Privacy Policy, which is
               incorporated into these Legal Terms. Please be advised the Services are hosted in <bdt

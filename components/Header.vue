@@ -5,7 +5,7 @@
     <div id="map" class="container mx-auto">
       <MapSvg />
     </div>
-    <div class="container mx-auto px-4 flex items-center justify-between z-10 relative">
+    <div class="container mx-auto pr-4 pl-0 flex items-center justify-between z-10 relative">
       <LogoSvg />
       <div class="flex items-center gap-4">
         <NuxtLink to="/info"

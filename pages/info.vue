@@ -13,7 +13,7 @@ const handleSources = async () => await navigateTo('/sources')
       <AlertCircle class="w-4 h-4" />
       <AlertTitle>Info</AlertTitle>
       <AlertDescription>
-        Our service is designed for entertainment purposes only. While we strive to ensure the accuracy of the Oddsofme
+        Our service is <strong>designed for entertainment purposes</strong> only. While we strive to ensure the accuracy of the Oddsofme
         scores and results, they should not be taken seriously. We make every effort to provide realistic data, but
         individual uniqueness and numerous variables can affect the outcomes. This app is meant for fun, so enjoy it and
         have a great time!
