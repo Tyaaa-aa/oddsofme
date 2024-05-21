@@ -1,9 +1,9 @@
 import { supabase } from '../supabase'
 export default defineEventHandler(async (event) => {
-	try {
-		const { data, error } = await supabase
-			.from('questions')
-			.select(`
+  try {
+    const { data, error } = await supabase
+      .from('questions')
+      .select(`
         trait_id,
         question,
         description,
@@ -17,12 +17,12 @@ export default defineEventHandler(async (event) => {
         )
       `)
 
-		if (error) {
-			console.error('Error fetching questions and answers:', error)
-		} else {
-			return data
-		}
-	} catch (err) {
-		console.error('Error fetching questions and answers:', err)
-	}
+    if (error) {
+      console.error('Error fetching questions and answers:', error)
+    } else {
+      return data as Question[]
+    }
+  } catch (err) {
+    console.error('Error fetching questions and answers:', err)
+  }
 })
