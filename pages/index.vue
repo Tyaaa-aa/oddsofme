@@ -19,19 +19,38 @@ const handleStart = async () => await navigateTo('/quiz')
 </template>
 <style scoped>
 img {
-  animation: fadeIn 200ms;
-  scale: 0.7;
+  animation: fadeInMobile 200ms;
+  scale: 1;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInMobile {
   from {
     opacity: 0;
-    scale: 0.6;
+    scale: 0.7;
   }
 
   to {
     opacity: 5%;
+    scale: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  img {
+    animation: fadeInDesktop 200ms;
     scale: 0.7;
+  }
+
+  @keyframes fadeInDesktop {
+    from {
+      opacity: 0;
+      scale: 0.6;
+    }
+
+    to {
+      opacity: 5%;
+      scale: 0.7;
+    }
   }
 }
 </style>
