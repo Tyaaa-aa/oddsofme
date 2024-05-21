@@ -9,7 +9,7 @@ const handleSources = async () => await navigateTo('/sources')
 </script>
 <template>
   <div class="flex flex-col place-items-center h-[50dvh]" v-auto-animate>
-    <Alert class="max-w-[50%]">
+    <Alert class="md:max-w-[50%]">
       <AlertCircle class="w-4 h-4" />
       <AlertTitle>Info</AlertTitle>
       <AlertDescription>
@@ -20,7 +20,7 @@ const handleSources = async () => await navigateTo('/sources')
       </AlertDescription>
     </Alert>
 
-    <div class="flex items-center gap-2 mt-5">
+    <div class="flex items-center gap-2 mt-5 flex-wrap justify-center">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger as-child>

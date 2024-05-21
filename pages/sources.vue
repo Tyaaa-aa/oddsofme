@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="md:px-8 px-0 container">
     <h1 class="text-5xl font-bold text-left mt-5">Sources</h1>
-    <ol class="flex flex-col py-5 text-xs">
-      <li class="flex flex-col">
+    <ol class="flex flex-col py-5 text-xs overflow-x-auto">
+      <li class="flex flex-col whitespace-nowrap">
         <a v-for="source, index in sources" :key="source.trait_id" :href="encodeURI(source.source)" target="_blank"
           class="p-2 rounded-sm transition-all duration-150 hover:bg-popover">
           {{ index + 1 }}. {{ source.source }}
