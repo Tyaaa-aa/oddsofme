@@ -10,6 +10,7 @@ export default defineEventHandler(async (event) => {
         category,
         weight,
         source,
+        onboarding,
         answers (
           ans_id,
           answer_text,
