@@ -1,11 +1,5 @@
 import { supabase } from '../supabase'
 
-interface Sources {
-  trait_id: number,
-  source: string,
-  category: string
-}
-
 export default defineEventHandler(async (event) => {
   try {
     const { data, error } = await supabase

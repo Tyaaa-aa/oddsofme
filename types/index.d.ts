@@ -12,6 +12,13 @@ export declare global {
     category: string;
     weight: number;
     source: string;
+    onboarding: boolean;
     answers: Answer[];
+  }
+
+  interface Sources {
+    trait_id: number,
+    source: string,
+    category: string
   }
 }
