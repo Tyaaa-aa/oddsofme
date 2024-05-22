@@ -1,0 +1,6 @@
+{
+  "crons": [{
+    "path": "/api/update-sources.post",
+    "schedule": "0 11 * * *"
+  }]
+}

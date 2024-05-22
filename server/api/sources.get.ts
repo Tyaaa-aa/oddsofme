@@ -12,13 +12,12 @@ export default defineEventHandler(async (event) => {
       .from('questions')
       .select(`trait_id, source, category`)
       .order('trait_id', { ascending: true })
-
     if (error) {
-      console.error('Error fetching sources:', error)
+      throw error
     } else {
       return data as Sources[]
     }
   } catch (err) {
-    console.error('Error fetching sources:', err)
+    throw new Error('Error fetching sources')
   }
 })

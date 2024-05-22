@@ -6,11 +6,11 @@ const handleDisclaimer = async () => await navigateTo('/disclaimer')
 
 const loadSource = ref<boolean>(false)
 const handleSources = async () => {
-  await navigateTo('/sources')
+  setTimeout(async() => {
+    await navigateTo('/sources')
+  }, 500);
   loadSource.value = true
 }
-
-
 </script>
 <template>
   <div class="flex flex-col place-items-center h-[50dvh]">
@@ -66,12 +66,12 @@ const handleSources = async () => {
         <Tooltip>
           <TooltipTrigger as-child>
             <Button variant="secondary" @click="handleSources" v-auto-animate>
-              <Loader2 class="w-4 h-4 mr-2 animate-spin" v-if="loadSource" />
               Sources
+              <Loader2 class="w-4 h-4 ml-2 animate-spin" v-if="loadSource" />
             </Button>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Visit</p>
+            <p>See all sources</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
