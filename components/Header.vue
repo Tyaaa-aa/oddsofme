@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 </script>
 <template>
-  <header class="w-full h-[25dvh] overflow-hidden">
+  <header class="w-full h-[15dvh] md:h-[25dvh] overflow-hidden">
     <div id="map" class="container mx-auto">
       <MapSvg />
     </div>

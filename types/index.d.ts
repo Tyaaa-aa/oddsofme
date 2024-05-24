@@ -3,6 +3,7 @@ export declare global {
     ans_id: number;
     answer_text: string;
     percentage: number;
+    image: string;
   }
 
   interface Question {
