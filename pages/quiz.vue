@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-const { data: questions, pending, error, refresh } = useFetch<Question[]>("/api/questions", {
-  immediate: false,
+import { Toaster } from '@/components/ui/sonner'
+import { toast } from 'vue-sonner'
+const { data: questions, pending, error, refresh } = useLazyFetch<Question[]>("/api/questions", {
+  immediate: true,
   method: "POST",
   body: {
     onboarding: true
@@ -26,6 +28,16 @@ const handleAnswerSelect = (question: Question, ans_id: number) => {
   selectedAnswers.value.push(selectedAnswer)
   console.log(selectedAnswers.value)
 }
+
+const handleSkip = () => {
+  toast('Warning!', {
+		description: 'Skipping questions may lower your score accuracy. Try to answer as many as you can. At least 10 are required for a score.',
+		action: {
+			label: 'Ok',
+			onClick: () => console.log('Skip '),
+		},
+	})
+}
 </script>
 
 <template>
@@ -38,8 +50,9 @@ const handleAnswerSelect = (question: Question, ans_id: number) => {
     <div v-else>
       <div class="mb-10 max-w-3xl grid place-items-center" v-for="question, index in questions"
         :key="question.trait_id">
-        <QuizItem :question />
+        <QuizItem :question @ans-skip="handleSkip" />
       </div>
     </div>
+    <Toaster />
   </div>
 </template>

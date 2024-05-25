@@ -26,11 +26,13 @@
 const props = defineProps<{
   question: Question
 }>()
+const emit = defineEmits(['ansSkip'])
 
 const skip = ref(false)
 const handleSkip = () => {
   // Save to store later
   skip.value = !skip.value
+  if (skip.value) emit('ansSkip')
 }
 const handleAnswerSelect = (question: Question, ans_id: number) => {
 // Save to store later
