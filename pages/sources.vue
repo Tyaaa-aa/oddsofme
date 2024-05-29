@@ -25,8 +25,7 @@
 
 <script lang="ts" setup>
 import { AlertCircle, Loader2 } from 'lucide-vue-next'
-const { data: sources, pending, error, refresh } = await useFetch<Sources[]>("/api/sources")
+const { data: sources, pending, error, refresh } = await useFetch<Sources[]>("/api/sources-cache")
 sources.value = sources.value?.filter((source: any) => source.source !== null) ?? []
 sources.value = sources.value?.filter((source: any) => source.source.substring(0, 4) === 'http')
-console.log(sources.value);
 </script>

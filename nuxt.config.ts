@@ -26,12 +26,22 @@ export default defineNuxtConfig({
   security: {
     headers: {
       crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
+      contentSecurityPolicy: {
+        "img-src": [
+          "'self'",
+          "https://res.cloudinary.com/",
+          "https://images.unsplash.com/",
+          "https://plus.unsplash.com/",
+          "https://images.pexels.com/",
+          "https://upload.wikimedia.org/",
+        ]
+      },
     },
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-	vue: {
+  vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag === 'bdt'
     }

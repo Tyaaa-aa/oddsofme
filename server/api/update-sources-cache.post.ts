@@ -2,13 +2,8 @@ import { supabase } from '../supabase'
 import { promises as fs } from 'fs'
 import path from 'path'
 
-interface Sources {
-  trait_id: number,
-  source: string,
-  category: string
-}
 
-const cacheFilePath = path.join(process.cwd(), 'sources-cache.json')
+const cacheFilePath = path.join(process.cwd(), 'cache/sources-cache.json')
 
 export default defineEventHandler(async (event) => {
   try {
