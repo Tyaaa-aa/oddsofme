@@ -3,6 +3,7 @@ import path from 'path'
 import { supabase } from '../supabase'
 
 const cacheFilePath = path.join(process.cwd(), 'sources-cache.json')
+createCacheFileIfNotExists()
 
 export default defineEventHandler(async (event) => {
   try {
@@ -35,7 +36,7 @@ async function updateCache() {
     const data = await fetchDataFromDatabase()
     const jsonData = JSON.stringify(data, null, 2)
     await fs.writeFile(cacheFilePath, jsonData)
-    console.log('\x1b[32m', 'Cache updated!')
+    console.log('\x1b[32m', 'Sources cache updated!')
     return { message: 'Data cached successfully', data }
   } catch (err) {
     console.error('Error updating cache:', err)
@@ -56,5 +57,16 @@ async function fetchDataFromDatabase() {
     }
   } catch (err) {
     throw new Error('Error fetching sources')
+  }
+}
+
+async function createCacheFileIfNotExists() {
+  try {
+    await fs.access(cacheFilePath)
+  } catch (err) {
+    const dirPath = path.dirname(cacheFilePath)
+    await fs.mkdir(dirPath, { recursive: true })
+    await fs.writeFile(cacheFilePath, '')
+    console.log(`Created ${cacheFilePath}`)
   }
 }
