@@ -8,7 +8,7 @@ interface Sources {
   category: string
 }
 
-const cacheFilePath = path.join(process.cwd(), 'sources-cache.json')
+const cacheFilePath = path.join(process.cwd(), 'server/cache/sources-cache.json')
 
 export default defineEventHandler(async (event) => {
   try {
