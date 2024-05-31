@@ -45,5 +45,12 @@ export default defineNuxtConfig({
     compilerOptions: {
       isCustomElement: (tag) => tag === 'bdt'
     }
+  },
+  routeRules: {
+    '/cron': {
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    },
   }
 })
