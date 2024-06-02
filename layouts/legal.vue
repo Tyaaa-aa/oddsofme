@@ -10,6 +10,15 @@
         <slot />
       </div>
     </main>
+    <footer>
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <p>&copy; 2024 All rights reserved</p>
+        <NuxtLink to="/info"
+          class="hover:border-b-foreground border-b-2 border-b-transparent transition-color duration-200 p-0.5">
+          Learn More
+        </NuxtLink>
+      </div>
+    </footer>
   </div>
 </template>
 
