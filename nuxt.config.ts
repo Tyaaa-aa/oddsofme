@@ -25,7 +25,8 @@ export default defineNuxtConfig({
   },
   security: {
     headers: {
-      crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
+      // crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
+      crossOriginEmbedderPolicy: 'unsafe-none',
       contentSecurityPolicy: {
         "img-src": [
           "'self'",
@@ -34,7 +35,12 @@ export default defineNuxtConfig({
           "https://plus.unsplash.com/",
           "https://images.pexels.com/",
           "https://upload.wikimedia.org/",
-        ]
+        ],
+        "font-src": [
+          "'self'",
+          "https://fonts.googleapis.com/",
+          "https://fonts.gstatic.com/",
+        ],
       },
     },
   },
@@ -50,6 +56,11 @@ export default defineNuxtConfig({
     '/cron': {
       headers: {
         'Content-Type': 'application/json',
+      },
+      security: {
+        rateLimiter: {
+          
+        },
       }
     },
   }
