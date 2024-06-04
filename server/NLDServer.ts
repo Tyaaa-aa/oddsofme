@@ -17,7 +17,7 @@ export async function NLDServer(actionType: 'read' | 'update' = 'read', fileName
   { filename: fileName };
 
   try {
-    const updateCacheResponse = await $fetch('https://tya.design/nldserver/static/', {
+    const updateCacheResponse = await $fetch('https://server.nightlights.dev/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
