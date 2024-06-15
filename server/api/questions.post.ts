@@ -1,6 +1,6 @@
 import { supabase } from '../supabase'
 export default defineEventHandler(async (event) => {
-   const { onboarding: onboarding } = await readBody(event)
+  const { onboarding: onboarding } = await readBody(event)
   if (onboarding === undefined) console.warn('Onboarding Boolean Not Provided', onboarding)
   try {
     const { data, error } = await supabase
@@ -10,13 +10,11 @@ export default defineEventHandler(async (event) => {
         question,
         description,
         category,
-        weight,
         source,
         onboarding,
         answers (
           ans_id,
           answer_text,
-          percentage,
           image
         )
       `)

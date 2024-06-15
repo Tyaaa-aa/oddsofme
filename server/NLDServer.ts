@@ -38,6 +38,6 @@ export async function NLDServer(actionType: 'read' | 'update' = 'read', fileName
         pretty: new Date().toLocaleString(),
         epoch: Date.now(),
       },
-    }
+    } as NLDServerResponse
   }
 }

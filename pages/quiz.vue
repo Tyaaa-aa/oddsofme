@@ -1,12 +1,9 @@
 <script lang="ts" setup>
 import { Toaster } from '@/components/ui/sonner'
 import { toast } from 'vue-sonner'
-const { data: questions, pending, error, refresh } = useLazyFetch<Question[]>("/api/questions", {
+const { data: questions, pending, error, refresh } = useLazyFetch<Question[]>("/api/questions-onboarding-cache", {
   immediate: true,
-  method: "POST",
-  body: {
-    onboarding: true
-  }
+  method: "GET",
 })
 // console.log(questions.value)
 
