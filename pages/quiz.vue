@@ -51,7 +51,7 @@ const submit = async () => {
 <template>
   <div class="relative container mx-auto grid place-items-center">
     <div class="w-full h-10 sticky top-0 bg-gradient-to-b from-background transition-all duration-200 ease-in-out"></div>
-    <div class="max-w-3xl grid place-items-center max-h-[75dvh] pr-2 overflow-hidden" v-if="pending" v-auto-animate>
+    <div class="max-w-3xl grid place-items-center max-h-[calc(75dvh-2.5rem)] pr-2 overflow-hidden" v-if="pending" v-auto-animate>
       <QuizItemSkeleton v-for="index in 3" :key="index" />
     </div>
     <div v-if="error">Error: {{ error }}</div>
@@ -67,5 +67,4 @@ const submit = async () => {
       <Button class="fixed right-9 bottom-20 z-50" @click="submit">SUBMIT</Button>
     </DevOnly>
   </div>
-
 </template>
