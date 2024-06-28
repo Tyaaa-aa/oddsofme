@@ -7,49 +7,65 @@ const { data: questions, pending, error, refresh } = useLazyFetch<Question[]>("/
 })
 // console.log(questions.value)
 
-interface SelectedAnswers {
-  question_id: number
-  ans_id: number
-}
 
-const selectedAnswers = ref<SelectedAnswers[]>([])
+const store = useGlobalStore()
+const submit = async () => {
+  console.log(questions.value?.length);
 
-const handleAnswerSelect = (question: Question, ans_id: number) => {
-  const selectedAnswer = {
-    question_id: question.trait_id,
-    ans_id
+  if (store.selectedAnswers.length < 10) {
+    toast('Warning!', {
+      description: 'You need to answer at least 10 questions to get a score.',
+      action: {
+        label: 'Ok',
+        onClick: () => console.log('Submit '),
+      },
+      duration: 5000,
+    })
+    return
   }
 
-  // if (selectedAnswers.value.some((answer) => answer.ans_id === ans_id) && selectedAnswers.value.length > 0) return
+  console.log(store.selectedAnswers)
+  console.log(store.skippedQuestions)
 
-  selectedAnswers.value.push(selectedAnswer)
-  console.log(selectedAnswers.value)
+
+
+  // const response = await fetch('/api/submit-answers', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(selectedAnswers.value),
+  // })
+
+  // if (response.ok) {
+  //   const data = await response.json()
+  //   console.log(data)
+  // } else {
+  //   console.error('Failed to submit answers')
+  // }
 }
 
-const handleSkip = () => {
-  toast('Warning!', {
-		description: 'Skipping questions may lower your score accuracy. Try to answer as many as you can. At least 10 are required for a score.',
-		action: {
-			label: 'Ok',
-			onClick: () => console.log('Skip '),
-		},
-	})
-}
+
 </script>
 
 <template>
-  <div class="container mx-auto grid place-items-center overflow-auto">
-    <Button class="fixed right-9 bottom-7 z-50" @click="refresh">REFRESH</Button>
-    <div class="max-w-3xl grid place-items-center overflow-y-hidden max-h-[75dvh] pr-2" v-if="pending" v-auto-animate>
+  <div class="relative container mx-auto grid place-items-center">
+    <div class="w-full h-10 sticky top-0 bg-gradient-to-b from-background transition-all duration-200 ease-in-out"></div>
+    <div class="max-w-3xl grid place-items-center max-h-[75dvh] pr-2 overflow-hidden" v-if="pending" v-auto-animate>
       <QuizItemSkeleton v-for="index in 3" :key="index" />
     </div>
     <div v-if="error">Error: {{ error }}</div>
     <div v-else>
       <div class="mb-10 max-w-3xl grid place-items-center" v-for="question, index in questions"
         :key="question.trait_id">
-        <QuizItem :question @ans-skip="handleSkip" />
+        <QuizItem :question />
       </div>
     </div>
     <Toaster />
+    <DevOnly>
+      <Button class="fixed right-9 bottom-7 z-50" @click="refresh">REFRESH</Button>
+      <Button class="fixed right-9 bottom-20 z-50" @click="submit">SUBMIT</Button>
+    </DevOnly>
   </div>
+
 </template>

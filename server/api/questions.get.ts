@@ -1,7 +1,7 @@
 import { supabase } from '../supabase'
 export default defineEventHandler(async (event) => {
-  const { onboarding: onboarding } = await readBody(event)
-  if (onboarding === undefined) console.warn('Onboarding Boolean Not Provided', onboarding)
+  // const { onboarding: onboarding } = await readBody(event)
+  // if (onboarding === undefined) console.warn('Onboarding Boolean Not Provided', onboarding)
   try {
     const { data, error } = await supabase
       .from('questions')
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
           image
         )
       `)
-      .eq('onboarding', onboarding ?? false)
+      .eq('onboarding', false)
       .eq('done', true)
       .order('percentage', { referencedTable: 'answers', ascending: false })
       .order('trait_id', { ascending: true }) as { data: Question[], error: any }

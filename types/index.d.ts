@@ -20,4 +20,11 @@ export declare global {
     source: string,
     category: string
   }
+
+  type SelectedAnswer = {
+    questionId: number
+    answerId: number 
+  }
+
+  type SkippedQuestion = number[]
 }
