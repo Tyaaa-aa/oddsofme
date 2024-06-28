@@ -19,7 +19,7 @@
     --secondary: 220 51% 16%;
     --secondary-foreground: 0 3% 94%;
     --muted: 0 4% 20%;
-    --muted-foreground: 36 37% 70%;
+    --muted-foreground: 0 0% 40%;
     --accent: 232 47% 32%;
     --accent-foreground: 0 3% 94%;
     --destructive: 0 85% 60%;
@@ -29,7 +29,7 @@
     --ring: 232 47% 40%;
     --radius: 0.75rem;
 
-    --text: #1c160d;
+    /* --text: #1c160d;
     --background: #f0efef;
     --primary: #fda312;
     --secondary: #14223e;
@@ -44,77 +44,76 @@
     --accent: 233 48% 33%;
     --neutral: 0 0% 51%;
     --faded: 0 0% 85%;
-    --negative-text: 0 0% 94%;
-
-    .text {
-      color: hsl(var(--text));
-    }
-
-    .background2 {
-      background-color: hsl(var(--background));
-    }
-
-    .primary {
-      color: hsl(var(--primary));
-    }
-
-    .secondary {
-      color: hsl(var(--secondary));
-    }
-
-    .accent {
-      color: hsl(var(--accent));
-    }
-
-    .neutral {
-      color: hsl(var(--neutral));
-    }
-
-    .faded {
-      color: hsl(var(--faded));
-    }
-
-    .negative-text {
-      color: hsl(var(--negative-text));
-    }
+    --negative-text: 0 0% 94%; */
+  }
+  .text {
+    color: hsl(var(--text));
   }
 
-  .dark {
-    --background: 0 3% 6%;
-    --foreground: 36 37% 92%;
-    --card: 0 3% 6%;
-    --card-foreground: 36 37% 92%;
-    --popover: 0 0 15%;
-    --popover-foreground: 36 37% 92%;
-    --primary: 37 98% 47%;
-    --primary-foreground: 0 3% 6%;
-    --secondary: 220 51% 84%;
-    --secondary-foreground: 0 3% 6%;
-    --muted: 0 4% 80%;
-    --muted-foreground: 36 37% 92%;
-    --accent: 232 47% 68%;
-    --accent-foreground: 0 3% 6%;
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 35 37% 10%;
-    --border: 0 3% 60%;
-    --input: 0 4% 80%;
-    --ring: 232 47% 60%;
+  .background2 {
+    background-color: hsl(var(--background));
   }
 
-  /* ===== Scrollbar CSS ===== */
-  /* Chrome, Edge, and Safari */
-  ::-webkit-scrollbar {
-    width: 8px;
+  .primary {
+    color: hsl(var(--primary));
   }
 
-  ::-webkit-scrollbar-track {
-    background: hsl(var(--popover));
+  .secondary {
+    color: hsl(var(--secondary));
   }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--muted));
-    border-radius: 10px;
+  .accent {
+    color: hsl(var(--accent));
   }
+
+  .neutral {
+    color: hsl(var(--neutral));
+  }
+
+  .faded {
+    color: hsl(var(--faded));
+  }
+
+  .negative-text {
+    color: hsl(var(--negative-text));
+  }
+}
+
+.dark {
+  --background: 0 3% 6%;
+  --foreground: 36 37% 92%;
+  --card: 0 3% 6%;
+  --card-foreground: 36 37% 92%;
+  --popover: 0 0 15%;
+  --popover-foreground: 36 37% 92%;
+  --primary: 37 98% 47%;
+  --primary-foreground: 0 3% 6%;
+  --secondary: 220 51% 84%;
+  --secondary-foreground: 0 3% 6%;
+  --muted: 0 4% 80%;
+  --muted-foreground: 36 37% 92%;
+  --accent: 232 47% 68%;
+  --accent-foreground: 0 3% 6%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 35 37% 10%;
+  --border: 0 3% 60%;
+  --input: 0 4% 80%;
+  --ring: 232 47% 60%;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--popover));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted));
+  border-radius: 10px;
 }
 
 @layer base {
