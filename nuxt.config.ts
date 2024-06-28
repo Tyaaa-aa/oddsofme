@@ -59,9 +59,12 @@ export default defineNuxtConfig({
       },
       security: {
         rateLimiter: {
-          
+
         },
       }
     },
+    'privacy': { prerender: true },
+    'terms-and-condition': { prerender: true },
+    'disclaimer': { prerender: true },
   }
 })
