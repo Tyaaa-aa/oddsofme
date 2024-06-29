@@ -10,11 +10,13 @@ const { data: questions, pending, error, refresh } = useLazyFetch<Question[]>("/
 
 const store = useGlobalStore()
 const submit = async () => {
-  console.log(questions.value?.length);
+  console.log(store.selectedAnswers.length);
 
-  if (store.selectedAnswers.length < 10) {
+  // Remove skipped questions from selected answers
+  const MIN_ANSWERS = 10
+  if (store.selectedAnswers.length < MIN_ANSWERS) {
     toast('Warning!', {
-      description: 'You need to answer at least 10 questions to get a score.',
+      description: `You need to answer at least ${MIN_ANSWERS} questions to get a score. You have only answered ${store.selectedAnswers.length}.`,
       action: {
         label: 'Ok',
         onClick: () => console.log('Submit '),
@@ -24,8 +26,13 @@ const submit = async () => {
     return
   }
 
+  store.selectedAnswers = store.selectedAnswers
+    .filter((selected) => !store.skippedQuestions
+      .includes(selected.questionId))
+
   console.log(store.selectedAnswers)
   console.log(store.skippedQuestions)
+
 
 
 
@@ -50,12 +57,14 @@ const submit = async () => {
 
 <template>
   <div class="relative container mx-auto grid place-items-center">
-    <div class="w-full h-10 sticky top-0 bg-gradient-to-b from-background transition-all duration-200 ease-in-out"></div>
-    <div class="max-w-3xl grid place-items-center max-h-[calc(75dvh-2.5rem)] pr-2 overflow-hidden" v-if="pending" v-auto-animate>
+    <div class="w-full h-10 sticky top-0 bg-gradient-to-b from-background transition-all duration-200 ease-in-out">
+    </div>
+    <div class="max-w-3xl grid place-items-center max-h-[calc(75dvh-2.5rem)] pr-2 overflow-hidden" v-if="pending"
+      v-auto-animate>
       <QuizItemSkeleton v-for="index in 3" :key="index" />
     </div>
     <div v-if="error">Error: {{ error }}</div>
-    <div v-else>
+    <div v-else class="flex flex-col pb-5">
       <div class="mb-10 max-w-3xl grid place-items-center" v-for="question, index in questions"
         :key="question.trait_id">
         <QuizItem :question />
@@ -63,8 +72,12 @@ const submit = async () => {
     </div>
     <Toaster />
     <DevOnly>
-      <Button class="fixed right-9 bottom-7 z-50" @click="refresh">REFRESH</Button>
-      <Button class="fixed right-9 bottom-20 z-50" @click="submit">SUBMIT</Button>
+      <ClientOnly>
+        <div class="fixed left-9 bottom-96 z-50 flex flex-col gap-2">
+          <Button @click="refresh" variant="outline">REFRESH</Button>
+          <Button @click="submit" variant="outline">SUBMIT</Button>
+        </div>
+      </ClientOnly>
     </DevOnly>
   </div>
 </template>

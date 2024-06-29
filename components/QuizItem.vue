@@ -50,6 +50,8 @@ const handleSkip = (questionID: number) => {
   }
 
   if (store.skippedQuestions.includes(questionID)) {
+    console.log('Removing skipped question');
+    
     store.skippedQuestions = store.skippedQuestions.filter((skipped) => skipped !== questionID)
     return
   }
