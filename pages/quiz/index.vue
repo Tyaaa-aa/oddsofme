@@ -77,7 +77,7 @@ const canGoNext = computed(() => {
     <Toaster />
     <DevOnly>
       <ClientOnly>
-        <div class="fixed left-9 bottom-96 z-50 flex flex-col gap-2">
+        <div class="fixed right-9 bottom-96 z-50 flex flex-col gap-2">
           <Button @click="refresh" variant="outline">REFRESH</Button>
           <Button @click="submit" variant="outline">SUBMIT</Button>
         </div>
