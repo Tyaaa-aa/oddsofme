@@ -76,7 +76,12 @@ module.exports = {
         "fadein": {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
-        }
+        },
+        "fadein-bounce": {
+          '0%': { opacity: 0, transform: 'scale(0.9)' },
+          '50%': { opacity: 1, transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -84,6 +89,7 @@ module.exports = {
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
         "fadein": 'fadein 300ms ease-in-out',
+        "fadein-bounce": 'fadein-bounce 300ms ease-in-out',
       },
     },
   },

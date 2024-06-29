@@ -52,6 +52,9 @@ const submit = async () => {
   // }
 }
 
+const canGoNext = computed(() => {
+  return store.selectedAnswers.length + store.skippedQuestions.length >= 10
+})
 
 </script>
 
@@ -69,6 +72,7 @@ const submit = async () => {
         :key="question.trait_id">
         <QuizItem :question />
       </div>
+      <Button v-if="canGoNext" class="fixed right-9 bottom-5 shadow-lg animate-fadein-bounce">Next</Button>
     </div>
     <Toaster />
     <DevOnly>
