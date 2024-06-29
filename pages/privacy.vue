@@ -2860,19 +2860,19 @@
                                                                   <tbody>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <span style="font-size: 15px; "><span
                                                                             style="font-size: 15px; "><span
                                                                               data-custom-class="body_text"><strong>Category</strong></span></span></span>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-top: 1px solid black; border-right: 1px solid black;">
+                                                                        style="width: 51.4385%; border-top: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground));">
                                                                         <span style="font-size: 15px; "><span
                                                                             style="font-size: 15px; "><span
                                                                               data-custom-class="body_text"><strong>Examples</strong></span></span></span>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; border-right: 1px solid black; border-top: 1px solid black; text-align: center;">
+                                                                        style="width: 14.9084%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); text-align: center;">
                                                                         <span style="font-size: 15px; "><span
                                                                             style="font-size: 15px; "><span
                                                                               data-custom-class="body_text"><strong>Collected</strong></span></span></span>
@@ -2880,7 +2880,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -2889,7 +2889,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-top: 1px solid black; border-right: 1px solid black;">
+                                                                        style="width: 51.4385%; border-top: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -2903,7 +2903,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; vertical-align: middle; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; vertical-align: middle; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
@@ -2932,7 +2932,7 @@
                                                                   <tbody>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -2950,7 +2950,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -2962,7 +2962,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -2982,7 +2982,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -2998,7 +2998,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3009,7 +3009,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3029,7 +3029,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3045,7 +3045,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3054,7 +3054,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3074,7 +3074,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3091,7 +3091,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3112,7 +3112,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3132,7 +3132,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3148,7 +3148,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3157,7 +3157,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3177,7 +3177,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3194,7 +3194,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3205,7 +3205,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3225,7 +3225,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="width: 33.8274%; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 33.8274%; border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3242,7 +3242,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 51.4385%; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 51.4385%; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3255,7 +3255,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid black; border-top: 1px solid black;">
+                                                                        style="width: 14.9084%; text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground));">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3275,7 +3275,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; width: 33.8274%;">
+                                                                        style="border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); width: 33.8274%;">
                                                                         <div style="line-height: 1.5;">
                                                                           <span style="font-size: 15px; ">
                                                                             <span style="font-size: 15px; ">
@@ -3291,7 +3291,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="border-right: 1px solid black; border-top: 1px solid black; width: 51.4385%;">
+                                                                        style="border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); width: 51.4385%;">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3301,7 +3301,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="text-align: center; border-right: 1px solid black; border-top: 1px solid black; width: 14.9084%;">
+                                                                        style="text-align: center; border-right: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); width: 14.9084%;">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3338,7 +3338,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="border-bottom: 1px solid black; border-top: 1px solid black; border-right: 1px solid black; width: 51.4385%;">
+                                                                        style="border-bottom: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); width: 51.4385%;">
                                                                         <div style="line-height: 1.5;"><span
                                                                             style="font-size: 15px; "><span
                                                                               style="font-size: 15px; "><span
@@ -3351,7 +3351,7 @@
                                                                         </div>
                                                                       </td>
                                                                       <td
-                                                                        style="text-align: center; border-right: 1px solid black; border-bottom: 1px solid black; border-top: 1px solid black; width: 14.9084%;">
+                                                                        style="text-align: center; border-right: 1px solid hsl(var(--foreground)); border-bottom: 1px solid hsl(var(--foreground)); border-top: 1px solid hsl(var(--foreground)); width: 14.9084%;">
                                                                         <div style="line-height: 1.5;"><br></div>
                                                                         <div data-custom-class="body_text"
                                                                           style="line-height: 1.5;">
@@ -3378,7 +3378,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                       <td
-                                                                        style="border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black; line-height: 1.5;">
+                                                                        style="border-left: 1px solid hsl(var(--foreground)); border-right: 1px solid hsl(var(--foreground)); border-bottom: 1px solid hsl(var(--foreground)); line-height: 1.5;">
                                                                         <span data-custom-class="body_text">
                                                                           <bdt class="block-component"></bdt>
                                                                           K
@@ -3388,7 +3388,7 @@
                                                                         </span>
                                                                       </td>
                                                                       <td
-                                                                        style="border-right: 1px solid black; border-bottom: 1px solid black; line-height: 1.5;">
+                                                                        style="border-right: 1px solid hsl(var(--foreground)); border-bottom: 1px solid hsl(var(--foreground)); line-height: 1.5;">
                                                                         <bdt class="block-component"><span
                                                                             data-custom-class="body_text"></span></bdt>
                                                                         <span data-custom-class="body_text">
@@ -3422,7 +3422,7 @@
                                                                             data-custom-class="body_text"></span></bdt>
                                                                       </td>
                                                                       <td
-                                                                        style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                                        style="border-right: 1px solid hsl(var(--foreground)); border-bottom: 1px solid hsl(var(--foreground));">
                                                                         <div data-empty="true"
                                                                           style="text-align: center;"><br></div>
                                                                         <div data-custom-class="body_text"
@@ -4886,6 +4886,10 @@ definePageMeta({
 });
 </script>
 <style scoped>
+* {
+  color: hsl(var(--foreground))
+}
+
 [data-custom-class='body'],
 [data-custom-class='body'] * {
   background: transparent !important;
